@@ -1,0 +1,81 @@
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.text-danger {
+  color: #ff4d4f;
+}
+
+.text-secondary {
+  color: #9ba5b9;
+}
+
+.font-weight-semi {
+  font-weight: 500;
+}
+
+.required::before {
+  display: inline-block;
+  margin-right: 4px;
+  color: #f5222d;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: '*';
+}
+
+// Custom scrollbar
+* {
+  &::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    //background: ghostwhite;
+    //border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $third;
+    border-radius: 5px;
+
+    border: 2px solid #fff;
+    // border-right: 2px solid #fff;
+    background-clip: padding-box;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+  }
+}

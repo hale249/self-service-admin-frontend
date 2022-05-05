@@ -1,0 +1,173 @@
+* {
+  font-family: 'SVN Poppins';
+}
+
+//Custom Layout
+.ant-layout {
+  //min-height: 100vh;
+  //background: #f9fbfd;
+
+  &-sider {
+    &-trigger {
+      background: #0851bf;
+    }
+  }
+
+  &-header {
+    box-shadow: 0 1px 4px rgb(0 21 41 / 8%);
+    z-index: 10;
+
+    background: #fff;
+    padding: 0 16px;
+    height: 48px;
+    line-height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &-footer {
+    //background: #f9fbfd;
+    padding: 10px;
+  }
+}
+
+//Custom PageHeader
+.ant-page-header {
+  margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+  background: #fff;
+
+  &-heading {
+    display: flex;
+    align-items: center;
+
+    &-title {
+      font-weight: 500;
+    }
+
+    &-extra {
+      margin-left: auto;
+    }
+  }
+}
+
+//Custom Form
+.ant-form {
+  .ant-form-item {
+    margin-bottom: 10px;
+
+    .ant-form-item-label {
+      //line-height: 24px;
+    }
+
+    .has-error .ant-form-explain {
+      font-size: 12px;
+    }
+  }
+}
+
+//Custom Table
+.ant-table-wrapper {
+  &.table-responsive {
+    .ant-table-body {
+      overflow: auto;
+
+      table {
+        th,
+        td {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+.ant-table-filter-dropdown-link.clear {
+  color: red;
+}
+
+.ant-table-row-expand-icon::after {
+  line-height: 17px;
+}
+
+//Custom Sider
+.ant-layout-sider {
+  background: #064095;
+
+  .ant-menu-dark {
+    background: #064095;
+
+    .ant-menu-inline.ant-menu-sub {
+      background: #032351;
+    }
+
+    .ant-menu-item {
+      &-selected {
+        background-color: #0b6bfb;
+      }
+    }
+
+    .ant-menu-submenu {
+      
+    }
+  }
+}
+
+//Custom Card
+.ant-card {
+  box-shadow: 1px 1px 6px 0 rgba(69, 65, 78, 0.1);
+  border-radius: 4px;
+  color: #000;
+
+  &-head {
+    padding: 0 20px;
+  }
+
+  &-body {
+    padding: 20px;
+  }
+
+  &-foot {
+    padding: 0 20px;
+  }
+}
+
+//Custom Tabs
+.ant-tabs {
+  &-bar {
+    margin: 0 0 24px 0;
+  }
+}
+
+//Custom Button
+.ant-btn {
+  &-success,
+  &-success:hover,
+  &-success:focus {
+    background: #00c38c;
+    border-color: #00c38c;
+    color: #fff;
+  }
+
+  &-warning,
+  &-warning:hover,
+  &-warning:focus {
+    background: #ffa734;
+    border-color: #ffa734;
+    color: #fff;
+  }
+}
+
+//Custom Dropdown
+.ant-dropdown-menu{
+  &-item{
+    & > a.text-danger{
+      color: rgb(245, 67, 67);
+
+    }
+    & > a.text-danger:hover{
+      color: white;
+      background: rgb(243, 98, 98);
+    }
+  }
+}
